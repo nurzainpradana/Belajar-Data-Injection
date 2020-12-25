@@ -13,9 +13,12 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         setContentView(binding.root)
 
+        // Membuat Object dari Class Senjata
+        val senjata = Senjata("Pedang Api", "Tombak Petir")
+
         // Membuat Instance atau Object dari class LightKnight NightKnigth
-        val lightKnight = LightKnight()
-        val darkKnight = DarkKnight()
+        val lightKnight = LightKnight(senjata)
+        val darkKnight = DarkKnight(senjata)
 
         // Menambahkan listener pada button
         binding.clickMe.setOnClickListener{
