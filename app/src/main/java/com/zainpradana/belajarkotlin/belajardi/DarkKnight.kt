@@ -9,6 +9,6 @@ class DarkKnight @Inject constructor(val senjata: Senjata) {
 
     //Membuat fungsi yang mengembalikan nilai string
     fun setEquip(): String {
-        return "Kelompok DarkKnight bertempur menggunakan " + senjata.pedang()
+        return "Kelompok DarkKnight bertempur menggunakan " + senjata.tombak()
     }
 }

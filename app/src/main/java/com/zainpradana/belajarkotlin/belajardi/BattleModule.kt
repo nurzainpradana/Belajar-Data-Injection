@@ -11,4 +11,9 @@ class BattleModule {
     fun setSenjata(): Senjata {
         return Senjata("Pedang larva", "Tombak halilintar")
     }
+
+    @Provides
+    fun SenjataCadangan(): Senjata {
+        return Senjata("Pedang Nama", "Tombak Golem")
+    }
 }
