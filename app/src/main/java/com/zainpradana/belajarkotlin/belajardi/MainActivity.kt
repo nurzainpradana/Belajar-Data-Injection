@@ -35,13 +35,14 @@ class MainActivity : AppCompatActivity() {
         // Menggunakan Library Dagger 2
 
         // Mendapatkan Konteks dari class yang bersangkutan
-        DaggerBattleComponent.create().inject(this)
+        DaggerBattleComponent.builder().battleModule(BattleModule)
+            .build().inject(this)
 
 
         // Listener pada button
         binding.clickMe.setOnClickListener{
             // Menampilkan data pada TextView yang diambil dari Fungsi setEquip dari kedua class tersebut
-            val getReport = lightKnight!!.setEquip() + " dan " + darkKnight!!.setEquip()
+            val getReport = lightKnight.setEquip() + " dan " + darkKnight.setEquip()
             binding.report.text = getReport
         }
 

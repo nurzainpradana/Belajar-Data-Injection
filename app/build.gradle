@@ -48,11 +48,10 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     // Library Dagger 2
-    kapt 'com.google.dagger:dagger-compiler:2.12'
-    kapt 'com.google.dagger:dagger-android-processor:2.12'
+    kapt 'com.google.dagger:dagger-compiler:2.21'
+    kapt 'com.google.dagger:dagger-android-processor:2.21'
 
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.google.dagger:dagger-android:2.21'
     implementation 'com.google.dagger:dagger-android-support:2.21' // if you use the support libraries
-    annotationProcessor 'com.google.dagger:dagger-android-processor:2.21'
-    annotationProcessor 'com.google.dagger:dagger-compiler:2.21'
 }
