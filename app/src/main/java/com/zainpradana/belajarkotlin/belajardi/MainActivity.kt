@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         // Mendapatkan Konteks dari class yang bersangkutan
         DaggerBattleComponent.create().inject(this)
 
+
         // Listener pada button
         binding.clickMe.setOnClickListener{
             // Menampilkan data pada TextView yang diambil dari Fungsi setEquip dari kedua class tersebut
